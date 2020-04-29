@@ -1,0 +1,38 @@
+Coronavirus immunity: Can you catch it twice?
+Can you catch coronavirus again? Why are some people sicker than others? Will it come back every winter? Will a vaccine work? Could immunity passports get some of us back to work? How do we manage the virus in the long-term? 
+The immune system is at the heart of some of the most important questions about the coronavirus. 
+The problem is we know very little.
+Our immune system is the body's defence against infection and it comes in two parts.
+The first is always ready to go and leaps into action as soon as any foreign invader is detected in the body. It is known as the innate immune response and includes the release of chemicals that cause inflammation and white blood cells that can destroy infected cells. 
+But this system is not specific to coronavirus. It will not learn and it will not give you immunity to the coronavirus. 
+Instead you need the adaptive immune response. This includes cells that produce targeted antibodies that can stick to the virus in order to stop it and T cells that can attack just the cells infected with the virus, called the cellular response. 
+This takes time - studies suggest it takes around 10 days to start making antibodies that can target the coronavirus and the sickest patients develop the strongest immune response. 
+If the adaptive immune response is powerful enough, then it could leave a lasting memory of the infection that will give protection in the future. 
+It is not known if people who have only mild symptoms, or none at all, will develop a sufficient adaptive immune response.
+The immune system's memory is rather like our own - it remembers some infections clearly, but has a habit of forgetting others. 
+Measles is highly memorable - one bout should give life-long immunity (as the weakened version in the MMR vaccine does). However, there are many others that are pretty forgettable. Children can get RSV (respiratory syncytial virus) multiple times in the same winter.
+The new coronavirus, called Sars-CoV-2, has not been around long enough to know how long immunity lasts, but there are six other human coronaviruses that can give a clue. 
+Four produce the symptoms of the common cold and immunity is short-lived. Studies showed some patients could be re-infected within a year.
+But the common cold is generally mild. There are two more troublesome coronaviruses - the ones that cause Severe Acute Respiratory Syndrome (Sars) and Middle East Respiratory Syndrome (Mers) - in which antibodies have been detected a few years later. 
+"The question is not whether you become immune, it's how long for," said Paul Hunter, a professor in medicine at the University of East Anglia.
+He added: "It almost certainly will not last for life. 
+"Based on antibody studies in Sars it is possible that immunity will only last about one to two years, though this is not yet known for certain."
+However, even if you are not completely immune it is possible a second infection would not be as severe. 
+There have been reports of people appearing to have multiple coronavirus infections in a short space of time. 
+Some have argued people are genuinely being infected twice. Another school of thought is the virus goes into stealth mode in the body before being reactivated. 
+However, the scientific consensus is that testing is the issue with patients being incorrectly told they were free of the virus. 
+Nobody has been deliberately reinfected with the virus to test immunity, but a pair of rhesus macaque monkeys have. 
+They were infected twice, once to build up an immune response and then a second time three weeks later. Those very limited experiments showed they did not develop symptoms again after such a quick reinfection. 
+This is not guaranteed and that is why the World Health Organization is nervous about countries using immunity passports as a way out of lockdown.
+The idea is if you pass the antibody test then you are safe to go back to work. This would be particularly valuable for staff in care homes or hospitals who come into contact with those at risk of developing severe symptoms. 
+But while you will find some antibodies in nearly every patient, not all are equal. Neutralising antibodies are the ones that stick to the coronavirus and are able to stop it infecting other cells. A study of 175 recovered patients in China showed 30% had very low levels of these neutralising antibodies. 
+That is why the World Health Organization says "that cellular immunity [the other part of the adaptive response] may also be critical for recovery".
+Another issue is that just because you might be protected by your antibodies, it doesn't mean you cannot still harbour the virus and pass it onto others. 
+It matters for obvious personal health reasons and whether you will get Covid-19 multiple times and how often.
+Immunity will also affect how deadly the virus is. If people retain some, even imperfect, protection then it will make the disease less dangerous.
+Understanding immunity could help ease lockdown if it is clear who is not at risk of catching or spreading the virus.
+If it is very difficult to produce long-term immunity, then it could make a vaccine harder to develop. Or it may change how the vaccine needs to be used - will it be a once a lifetime or once a year like the flu shot.
+And the duration of immunity, whether by infection or immunisation, will tell us how likely we are to be able to stop the virus spreading. 
+These are all big questions we still lack answers to.
+Follow James on Twitter
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

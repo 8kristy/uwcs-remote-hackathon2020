@@ -1,0 +1,33 @@
+NHS rejects Apple-Google coronavirus app plan
+The UK's coronavirus contact-tracing app is set to use a different model to the one proposed by Apple and Google, despite concerns raised about privacy and performance.
+The NHS says it has a way to make the software work "sufficiently well" on iPhones without users having to keep it active and on-screen.
+That limitation has posed problems for similar apps in other countries.
+Experts from GCHQ's National Cyber Security Centre have aided the effort.
+NCSC indicated that its involvement has been limited to an advisory role.
+"Engineers have met several core challenges for the app to meet public health needs and support detection of contact events sufficiently well, including when the app is in the background, without excessively affecting battery life," said a spokeswoman for NHSX, the health service's digital innovation unit.
+Contact-tracing apps are designed to automatically alert people to whether they are at high risk of having the virus, based on whether someone else they were recently near to has been diagnosed with it.
+They work by logging each time two people are within a certain distance of each other for longer than a specified amount of time.
+When one user registers themselves as being infected, a cascade of alerts is automatically sent out to everyone else they could have passed it on to - possibly advising them to go into quarantine and/or get tested themselves.
+Like the authorities in many other countries, NHSX has opted to use wireless Bluetooth transmissions to keep track of each qualifying meeting, and has said that the alerts will be sent anonymously, so that users do not know who triggered them.
+It has opted for a "centralised model" to achieve this - meaning that the matching process, which works out which phones to send alerts to - happens on a computer server.
+This contrasts with Apple and Google's "decentralised" approach - where the matches take place on users' handsets.
+The tech giants believe their effort provides more privacy, as it limits the ability of either the authorities or a hacker to use the computer server logs to track specific individuals and identify their social interactions.
+But NHSX believes a centralised system will give it more insight into Covid-19's spread, and therefore how to evolve the app accordingly. 
+"One of the advantages is that it's easier to audit the system and adapt it more quickly as scientific evidence accumulates," Prof Christophe Fraser, one of the epidemiologists advising NHSX, told the BBC.
+"The principal aim is to give notifications to people who are most at risk of having got infected, and not to people who are much lower risk.
+"It's probably easier to do that with a centralised system."
+This approach puts the UK at odds with Switzerland, Estonia and Austria's Red Cross, as well as a pan-European group called DP3T, which are pursuing decentralised designs.
+Germany had been in line with NHSX, but its government announced on Sunday it had switched tack to a "strongly decentralised approach".
+That leaves France as one of the more vocal advocates of a centralised model.
+But hundreds of the country's cryptography and computer security experts have just signed an open letter calling on it to reconsider. Dozens of those opponents work for Inria, the institution tasked with building the app.
+For its part, the European Commission has indicated that either model is acceptable.
+"All countries deploying an app must put adoption at the front of their mind, and if it doesn't work well or significantly depletes battery life then that may act as a deterrent, particularly for those with older phones," commented DP3T's Dr Michael Veale.
+Apple and Google intend to release an API software building block this week to support apps that follow their model.
+As an incentive, Apple will let compliant products carry out Bluetooth-based "handshakes" in the background without hindrance.
+The US company does not oppose the NHSX's own effort - and has supported the British team - but still believes its own solution is much more power-efficient.
+The UK's solution involves waking up the app in the background every time the phone detects another device running the same software.
+It then executes some code before returning to a dormant state. This all happens at speed, but there is still an energy impact.
+By contrast, Apple's own solution allows the matching to be done without the app having to wake up at all.
+And because the handshakes take even less time to execute, there should be much less toll on battery life.
+Australia is the latest country to release a contact-tracing app. It too had indicated it had found a way to work around Apple's restrictions, but has since acknowledged power consumption problems as well as "interference" if users have other Bluetooth and location-tracking apps open.
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

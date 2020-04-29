@@ -1,0 +1,38 @@
+With humans vulnerable: How about a digital helper?
+Since February, California-based manufacturer CloudMinds has shipped more than 100 robots to China.
+Many of those have gone to hospitals, where the XR-1 provides information to patients and helps guide visitors to the right department. 
+The artificial intelligence (AI) incorporated into the machines means they can operate on their own. They also are connected to the latest 5G mobile phone networks, which means they can react very quickly. 
+"The fast speeds and wide reach of 5G networks make them ideal for XR-1, which interacts by talking, gesturing, dancing and physically guiding people," says CloudMinds president Karl Zhao.
+According to Wuhan Wuchang Field Hospital dean Wan Jun, they have been helpful. "CloudMinds robots' contactless operation and reliability supported the field hospital through a difficult time," he says.
+A few dozen robots is not going to make a big dent in the coronavirus outbreak, but it could be a sign of what's coming. 
+Artificial intelligence has made big steps forward in tasks like processing speech, which is making digital helpers more and more useful.
+Dr Anita Montes, an obstetrician-gynaecologist based in North Carolina, says voice-enabled app Suki saves her "hours and hours a day" writing notes.
+"Proper charting is vital to good patient care," she says.
+She thinks the service could be helpful for doctors who are dealing with Covid-19 patients as a result: "They might be spending 12 hours seeing patients, then hours more charting them, so any tools that can cut the time it takes are really helpful."
+Until now, most people's experience of digital assistants has been limited to recreationally focused services such as Amazon's Alexa and Apple's Siri.
+"Business usage is growing, but the digital assistant market is mostly residential at the moment," says Blake Kozak, an analyst at global technology researcher Omdia.
+But quarantined helpers are turning to AI tools for help.
+"We are currently setting up more meetings than we ever have before," says Dennis Mortensen, chief executive and co-founder of x.ai, an AI meeting scheduling tool that emails participants with potential times.
+"The situation is making people turn to software solutions, and I doubt they will go back once things return to normal."
+That's good news for Microsoft, which recently began removing consumer-facing features such as controlling music from its assistant Cortana's skill set, and concentrating on personal productivity applications such as reading emails aloud and scheduling meetings.
+"There is a need for an assistant that can go beyond answering questions or setting alarms," Microsoft said in a statement.
+"Our ultimate goal for Cortana is to create an assistant that can help you get back time through your day so you can focus on the things that matter most."
+However, for anyone keen to use a digital assistant to lighten their load, Mr Mortensen advises choosing a range of tools that each do one thing well.
+"I do not expect any one digital assistant to be able to do everything, but I do think we will see start to see AI agents being employed to do very well-defined tasks within the next five years," he says.
+"You might need 10 or 11 to do all the little jobs you need doing, but if we can get them all to talk to each other, they could do truly great things."
+More Technology of Business
+The staff at New York-based AI specialist IPsoft are hoping that is the case.
+It develops software packages designed to fulfil roles traditionally performed by people, such as an IT service desk engineer. 
+Via its new online marketplace, prospective employers can interview the company's assistant Amelia to decide if they should take on a digital employee rather than a person.
+Costing $1,800 (£1,460) a month, their IT troubleshooter can reset passwords, unlock accounts and deal with up to 1,000 inquiries a month. 
+So should humans be worried about these up-and-coming digital rivals?
+Not according to Chloe Jessamy of admin support and digital marketing company Supportal Business Services in London.
+Her company supplies services, including PAs and web design, performed by humans, not computers.
+"I am not at all worried about digital assistants," she says.
+"My clients want hands-on support and communication, which needs a human touch. There's only so much automation you can use."
+Dr Will Venters, assistant professor of information systems at the London School of Economics, supports this view.
+"Bots need careful management," he says
+"They won't question their work, they hold no ethical compass, they cannot easily explain how they arrived at a decision and they cannot understand the biases they might be applying.
+"Further, they work so quickly that the problems they cause can rapidly scale out of control." 
+So having a digital helper might make you more productive, but it's worth remembering that they are not perfect.
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

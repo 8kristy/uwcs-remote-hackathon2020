@@ -20,18 +20,24 @@ def parseData(f, category):
     word_family_counts.append(word_family_count)
 
 # goes through all training data and adds vectors to corresponding lists
-# categories: 0 = neutral, 1 = biased, 2 = satire
+# categories: 0 = neutral, 1 = biased, 2 = satire, 3 = fake
+# TODO: mess around with order of adding stuff in hopes of improving accuracy (worked once, will try again)
 for fileName in os.listdir("data/neutral"):
-    with open ("data/neutral/" + fileName, "rt") as f:
+    with open ("data/neutral/" + fileName, "rt",  encoding='utf8', errors='ignore') as f:
         parseData(f, 0)
 
-for fileName in os.listdir("data/biased"):
-    with open ("data/biased/" + fileName, "rt") as f:
-        parseData(f, 1)
-
 for fileName in os.listdir("data/satire"):
-    with open ("data/satire/" + fileName, "rt") as f:
+    with open ("data/satire/" + fileName, "rt",  encoding='utf8', errors='ignore') as f:
         parseData(f, 2)
+
+for fileName in os.listdir("data/fake"):
+    with open ("data/fake/" + fileName, "rt",  encoding='utf8', errors='ignore') as f:
+        parseData(f, 3)   
+
+
+for fileName in os.listdir("data/biased"):
+    with open ("data/biased/" + fileName, "rt", encoding='utf8', errors='ignore') as f:
+        parseData(f, 1)             
 
 # trains a model based on vectors hashed from the content
 hash_model = svm.SVC()
