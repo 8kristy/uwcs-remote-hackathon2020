@@ -2,7 +2,9 @@ import pickle, os
 from vectorize import getData
 
 # loads the trained model
-hash_model = pickle.load(open("hash_model", "rb"))
+title_model = pickle.load(open("title_model", "rb"))
+content_model = pickle.load(open("content_model", "rb"))
+
 
 # placeholder values for testing; will have the input from site later
 titles, contents = [], []
@@ -12,13 +14,17 @@ def parseData(f):
     titles.append(f.readline().strip())
     contents.append(' '.join(f.readlines()[1:]))
 
-categories = []
+# goes through all tests to check the accuracy (current: 75, 45, 59) (done manually for now)
+for fileName in os.listdir("tests"):
+    with open ("tests/" + fileName, "rt",  encoding='utf8', errors='ignore') as f:
+        parseData(f)    
 
 for title, content in zip(titles, contents):
     # gets the vector for the specified article
-    hash_vectors = getData(title, content)
+    title_vect, content_vect = getData(title, content)
     # makes a predition on where the article belongs using 3 models
-    hash_prediction = hash_model.predict(hash_vectors)
-
+    title_prediction = title_model.predict([title_vect])
+    content_prediction = content_model.predict([content_vect])
+    print(title_prediction, content_prediction)
                
 

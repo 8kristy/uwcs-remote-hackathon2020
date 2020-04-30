@@ -9,13 +9,15 @@ import numpy, string, pickle, os
 categories = []
 
 # hashes of all articles in the training data to use when classifying
-hashes = []
+title_hashes = []
+content_hashes = []
 
 # gets the vectors and adds them to the list to be trained
 def parseData(f, category):
-    hash_vect = getData(f.readline().strip(), ' '.join(f.readlines()[1:]))
+    title_vect, content_vect = getData(f.readline().strip(), ' '.join(f.readlines()[1:]))
     categories.append(category)
-    hashes.append(hash_vect)
+    title_hashes.append(title_vect)
+    content_hashes.append(content_vect)
 
 # goes through all training data and adds vectors to corresponding lists
 # categories: 0 = neutral, 1 = biased, 2 = satire, 3 = fake
@@ -39,6 +41,10 @@ for fileName in os.listdir("data/fake"):
         
 # trains a model based on vectors hashed from the content
 # uses neural networks
-hash_model = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(300, 150), random_state=1)
-hash_model.fit(hashes[0], categories)
-pickle.dump(hash_model, open("hash_model", 'wb'))
+title_model = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(300, 150), random_state=1)
+title_model.fit(title_hashes, categories)
+pickle.dump(title_model, open("title_model", 'wb'))
+
+content_model = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(300, 150), random_state=1)
+content_model.fit(content_hashes, categories)
+pickle.dump(content_model, open("content_model", 'wb'))
