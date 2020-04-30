@@ -1,0 +1,13 @@
+{
+	"id": "model1",
+	"name": "model1",
+	"options": {
+		"ngrams": 1,
+		"skipgrams": 1
+	},
+	"classes": [
+		"neutral",
+		"biased",
+		"satire"
+	]
+}

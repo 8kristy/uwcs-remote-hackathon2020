@@ -1,0 +1,24 @@
+Coronavirus: DJI Mavic Air 2 jettisons drone safety feature in Europe
+DJI has launched its first consumer drone to warn of nearby planes and helicopters via its controller.
+The inclusion of the safety feature follows multiple reports of near-misses with other aircraft.
+However, the firm says supply chain problems caused by the coronavirus pandemic mean it is only equipping the Mavic Air 2 with the ability in North America at this point.
+Buyers in Europe and elsewhere will be offered a version lacking the facility.
+DJI also said that logistics problems caused by the virus meant that it had been forced into a staggered launch.
+Consumers in the firm's home country of China will be able to buy the drone immediately. But while the firm has started taking orders elsewhere, it does not expect to begin deliveries until mid-May.
+DJI is the world's bestselling commercial drone-maker by a wide margin, and as a consequence is often in the spotlight when the issue of safety arises.
+In May 2019, it promised to add its AirSense system to all future consumer drones weighing more than 250g (0.6lb).
+The technology works by using radio and satellite signals to identify the location of other aircraft, via the automatic dependent surveillance-broadcast (ADS-B) system.
+Compliant planes and helicopters use this to broadcast their flight path, speed and altitude.
+DJI introduced ADS-B to its M200 professional drones in 2017, but to date, its models can only detect signals from other aircraft rather than transmit them.
+In the new drone's case, the control screen will display the location of nearby aircraft. If they start to approach, the device will show messages, make sounds and vibrate in the hand to warn of potential danger, prompting the pilot to change paths.
+The lack of this feature in the initial batch of models sold outside the US and Canada may limit demand, given that the company has indicated it intends to add the capability to future supplies.
+In other respects, DJI has said the two versions are identical.
+The £769 Mavic Air 2 is advertised as offering up to 34 minutes of flight time - about a 60% improvement on the original model, which went on sale in January 2018.
+It also benefits from a larger camera sensor and the addition of a timelapse feature that captures sped-up footage at up to 8K resolution. Real-time video can be recorded at up to 60 frames per second at a maximum of 4K, and stills at 48 megapixels.
+Like the original Mavic Air, the new model folds up when not in use. But it is 33% heavier and noticeably larger, weighing 570g (1.3lb) and measuring 18cm x 9.7cm x 8.4mm (7.1in x 3.8in x 3.3in).
+Despite the launch issues posed by Covid-19, the pandemic may play to DJI's advantage.
+The firm is promoting the use of its professional models for monitoring social distancing and to broadcast safety messages, describing them as the "Swiss Army knife" of the air.
+Its own website highlights that local police in Turin, Italy have used models to monitor people's movements at day and night to check they were complying with lockdown rules.
+It also notes that the Spanish government has repurposed some of its agricultural drones to spray disinfectant in public areas.
+Furthermore, the company has suggested its drones could be used to move medical supplies between different communities to reduce the risk of spreading the virus.
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

@@ -1,0 +1,33 @@
+UK spies will need artificial intelligence - Rusi report
+UK spies will need to use artificial intelligence (AI) to counter a range of threats, an intelligence report says.
+Adversaries are likely to use the technology for attacks in cyberspace and on the political system, and AI will be needed to detect and stop them.
+But AI is unlikely to predict who might be about to be involved in serious crimes, such as terrorism - and will not replace human judgement, it says.
+The report is based on unprecedented access to British intelligence.
+The Royal United Services Institute (Rusi) think tank also argues that the use of AI could give rise to new privacy and human-rights considerations, which will require new guidance.
+The UK's adversaries "will undoubtedly seek to use AI to attack the UK", Rusi says in the report - and this may include not just states, but also criminals. 
+The future threats could include using AI to develop deep fakes - where a computer can learn to generate convincing faked video of a real person - in order to manipulate public opinion and elections.
+It might also be used to mutate malware for cyber-attacks, making it harder for normal systems to detect - or even to repurpose and control drones to carry out attacks. 
+In these cases, AI will be needed to counter AI, the report argues.
+"Adoption of AI is not just important to help intelligence agencies manage the technical challenge of information overload. It is highly likely that malicious actors will use AI to attack the UK in numerous ways, and the intelligence community will need to develop new AI-based defence measures," argues Alexander Babuta, one of the authors. 
+The independent report was commissioned by the UK's GCHQ security service, and had access to much of the country's intelligence community.
+All three of the UK's intelligence agencies have made the use of technology and data a priority for the future - and the new head of MI5, Ken McCallum, who takes over this week, has said one of his priorities will be to make greater use of technology, including machine learning. 
+However, the authors believe that AI will be of only "limited value" in "predictive intelligence" in fields such as counter-terrorism.  
+The often-cited fictional reference is the film Minority Report where technology is used to predict those on the path to commit a crime before they have carried it out.
+But the report argues this is less likely to be viable in real-life national security situations. 
+Acts such as terrorism are too infrequent to provide sufficiently large historical datasets to look for patterns - they happen far less often than other criminal acts, such as burglary. 
+Even within that data set, the background and ideologies of the perpetrators vary so much that it is hard to build a model of a terrorist profile. There are too many variables to make prediction straightforward, with new events potentially being radically different from previous ones, the report argues. 
+Any kind of profiling could also be discriminatory and lead to new human-rights concerns. 
+In practice, in fields like counter-terrorism, the report argues that "augmented" - rather than artificial - intelligence will be the norm - where technology helps human analysts sift through and prioritise increasingly large amounts of data, allowing humans to make their own judgements. 
+It will be essential to ensure human operators remain accountable for decisions and that AI does not act as a "black box", from which people do not understand the basis on which decisions are made, the report says.
+The authors are also wary of some of the hype around AI, and of talk that it will soon be transformative.
+Instead, they believe we will see the incremental augmentation of existing processes rather than the arrival of novel futuristic capabilities.
+They believe the UK is in a strong position globally to take a lead, with a concentration of capability in GCHQ - and more widely in the private sector, and in bodies like the Alan Turing Institute and the Centre for Data Ethics and Innovation. 
+This has the potential to allow the UK to position itself at the leading edge of AI use but within a clear framework of ethics, they say.
+The deployment of AI by intelligence agencies may require new guidance to ensure safeguards are in place and that any intrusion into privacy is necessary and proportionate, the report says.
+One of the thorny legal and ethical questions for spy agencies, especially since the Edward Snowden revelations, is how justifiable it is to collect large amounts of data from ordinary people in order to sift it and analyse it to look for those who might be involved in terrorism or other criminal activity.
+And there's the related question of how far privacy is violated when data is collected and analysed by a machine versus when a human sees it.
+Privacy advocates fear that artificial intelligence will require collecting and analysing far larger amounts of data from ordinary people, in order to understand and search for patterns, that create a new level of intrusion. The authors of the report believe new rules will be needed. 
+But overall, they say it will be important not to become over-occupied with the potential downsides of the use of technology. 
+"There is a risk of stifling innovation if we become overly-focused on hypothetical worst-case outcomes and speculations over some dystopian future AI-driven surveillance network," argues Mr Babuta. 
+"Legitimate ethical concerns will be overshadowed unless we focus on likely and realistic uses of AI in the short-to-medium term."
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

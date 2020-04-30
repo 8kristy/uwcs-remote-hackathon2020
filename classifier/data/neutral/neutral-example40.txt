@@ -1,0 +1,29 @@
+Climate change: 'Bath sponge' breakthrough could boost cleaner cars
+A new material developed by scientists could give a significant boost to a new generation of hydrogen-powered cars. 
+Like a bath sponge, the product is able to hold and release large quantities of the gas at lower pressure and cost.
+Containing billions of tiny pores, a single gram of the new aluminium-based material has a surface area the size of a football pitch.
+The authors say it can store the large volume of gas needed for practical travel without needing expensive tanks.
+Car sales, especially larger SUVs, have boomed in the US over the past number of years. 
+In 2017, CO2 emissions from cars, trucks, airplanes and trains, overtook power plants as the largest source of US greenhouse gas emissions.
+As well as developing electric vehicles, much focus has been on hydrogen as a zero emissions source of power for cars. 
+The gas is used to power a fuel cell in cars and trucks, and if it is produced using renewable energy it is a much greener fuel.
+However, hydrogen vehicles suffer from some drawbacks. 
+The gas is extremely light: in normal atmospheric pressure, to carry 1kg of hydrogen which might power your car for over 100km, you'd need a tank capable of holding around 11,000 litres. 
+To get around this problem, the gas is stored at high pressure, around 700 bar, so cars can carry 4-5kg of the gas and travel up to 500km before refilling.
+That level of pressure is around 300 times greater than in a car's tyres, and necessitates specially made tanks, all of which add to the cost of the vehicles.
+Now, researchers believe they have developed an alternative method that would allow the storage of high volumes of hydrogen under much lower pressure. 
+The team has designed a highly porous new material, described as a metal-organic framework.
+The product, with the glamorous name of NU-1501, has been built from organic molecules and metal ions which self-assemble to form highly crystalline, porous frameworks. 
+"It's like a bath sponge but with very ordered cavities," said Prof Omar Farha, from Northwestern University in Evanston, US, who led the research.
+"With a sponge, if you spill water and you wipe it, in order to reuse the sponge, you squeeze it. 
+"With this material we use the same thing - we use pressure to store and release these gas molecules."
+"So, it works exactly like a bath sponge, except in a very smart programmed way."
+The key ability of the new framework is that it can potentially store hydrogen and other gases at much lower pressures while not needing an enormous tank.
+"We can store tremendous amounts of hydrogen and methane within the pores of the metal-organic framework and deliver them to the engine of the vehicle at lower pressures than needed for current fuel cell vehicle," Prof Farha said. 
+His team have gained experience in developing these adsorbent materials for the US Department of Defense, to protect soldiers against nerve gas attacks, 
+The researchers say there is now funding available to develop this type of material for transport applications. 
+The new material has already beaten tough targets set by the US Department of Energy for onboard storage and delivery systems for alternative fuels. 
+But to go further, the scientists will need significant buy-in from car manufacturers.
+The research has been published in the journal Science. 
+Follow Matt on Twitter.
+Staff and residents of care homes in England, and over-65s, can now be tested, the health secretary says.

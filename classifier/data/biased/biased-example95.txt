@@ -1,0 +1,13 @@
+What is facial recognition?
+Fox News Headlines 24/7 radio host Brett Larson discusses photo recognition company Clearview AI being hacked and a new app that sues robocallers.
+Continue Reading Below
+In the case of iPhone facial recognition specifically, a phone with this capability uses a special camera that can capture and analyze more than "30,000 invisible dots to create a depth map" of a user's face and capture infrared images in just seconds, according to Apple's website.
+Facial recognition in use at an airport departure lounge / iStock
+Despite the convenience and security benefits of the feature, some civil rights and privacy activists argue that facial recognition technology could be used as a biometric tracking tool.
+In other words, facial recognition may expose people to mass surveillance even when they don't give consent.
+"Face recognition from mobile phone unlocking could certainly in the future become a key part of such a surveillance infrastructure," he wrote.
+Apple disabled a disgraced facial recognition app called Clearview AI in late February after reports that Clearview violated the tech giant's privacy rules surfaced.
+A woman sets up her facial recognition as she looks at her Apple iPhone X at an Apple store in New York, U.S., November 3, 2017. REUTERS/Lucas Jackson
+The U.S. government filed a class-action lawsuit in February accusing the company of illegally using people's biometric information pulled from social media profiles without their consent.
+Facebook also came under fire last year for its facial recognition tool.
+The users argued that the tool violated Illinois' Biometric Information Privacy Act.
