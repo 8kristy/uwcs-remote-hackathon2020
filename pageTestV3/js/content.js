@@ -1,3 +1,4 @@
+
 function modifyDOM() {
     //console.log(document.title);
     // console.log(document.body.innerText);
@@ -14,6 +15,21 @@ function modifyDOM() {
     }
     return pageText;
 }
+
+// sends the processes text to the backend (currently using local,
+// ideally would be hosted remotely)
+xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://127.0.0.1:5000/', true);
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.onload = function() {
+  if (xhr.status === 200) {
+      // just to show that something happens for now
+      alert(xhr.responseText);
+  }
+};
+xhr.send(modifyDOM());
+
+
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     // If the received message has the expected format...
     if (msg.text === 'report_back_full') {
@@ -22,4 +38,4 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
         result = modifyDOM();
         sendResponse(result); //this returns full page of stripped html, need to try and remove certain heading and list parts
     }
-});
+})
