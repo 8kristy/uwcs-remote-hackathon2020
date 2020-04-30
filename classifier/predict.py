@@ -25,6 +25,5 @@ for title, content in zip(titles, contents):
     # makes a predition on where the article belongs using 3 models
     title_prediction = title_model.predict([title_vect])
     content_prediction = content_model.predict([content_vect])
-    print(title_prediction, content_prediction)
                
 
