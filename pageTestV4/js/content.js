@@ -32,8 +32,8 @@ xhr.onload = function() {
       } catch {
         var description = "";
       }
-      
-      if (!(window.location.href.includes("google.com"))) {
+
+      if (!((window.location.pathname.length < 25))) { //checks that the length of the pathname is not less than 25
         if ( (title.includes("news")) || (keywords.includes("news")) || (description.includes("news")) ) {
             // alert("Yes, this is news");
             makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
@@ -46,11 +46,11 @@ xhr.send(modifyDOM());
 var dict = {0: "neutral", 1: "biased", 2: "satire", 3:"fake"};
 
 function makeDiv(text) {
-    title = parseInt(text.substring(0,1));  
-    content = parseInt(text.substring(1));  
+    title = parseInt(text.substring(0,1));
+    content = parseInt(text.substring(1));
 
-    var div = document.createElement("DIV"); 
-    
+    var div = document.createElement("DIV");
+
     var popupTitle = document.createElement("H1");
     var warning = document.createElement("p");
     var moreInfo = document.createElement("p");
@@ -65,7 +65,7 @@ function makeDiv(text) {
     warning.style.fontSize = "2.5vh";
 
     moreInfo.style.fontSize = "1.8vh";
-    
+
 
     if (title !== 0 || content !== 0){
         popupTitle.innerHTML = "Warning";
@@ -108,7 +108,7 @@ function makeDiv(text) {
     div.appendChild(moreInfo);
     div.style.position = "fixed";
     div.id = "hello_text_id"
-    document.body.appendChild(div); 
+    document.body.appendChild(div);
 }
 
 
