@@ -23,77 +23,115 @@ xhr.open('POST', 'http://127.0.0.1:5000/', true);
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onload = function() {
   if (xhr.status === 200) {
-      makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
+      makeDiv(xhr.responseText); // takes the answer it got and passes it to make the popup
   }
 };
 xhr.send(modifyDOM());
 
+// map used to get words based on values; easier than making a case for each one
 var dict = {0: "neutral", 1: "biased", 2: "satire", 3:"fake"};
 
+// main function which creates the div to be displayed; a mess. i'm sorry.
+// TODO: add icons next to text, write div into extension popup html, change extension logo to icon, hide div if neutral
 function makeDiv(text) {
+    // gets integer values of the warnings for both title and content
     title = parseInt(text.substring(0,1));  
     content = parseInt(text.substring(1));  
 
     var div = document.createElement("DIV"); 
     
+    // bits to be added to the div later
     var popupTitle = document.createElement("H1");
     var warning = document.createElement("p");
     var moreInfo = document.createElement("p");
 
-    popupTitle.className = "text";
-    warning.className = "text";
-    moreInfo.className = "text";
+    // setting the class for css purposes
+    popupTitle.className = "text_of_extension";
+    warning.className = "text_of_extension";
+    moreInfo.className = "text_of_extension";
 
+    // separately setting the attributes to avoid making more classes
     popupTitle.style.fontSize = "5vh";
     popupTitle.style.fontWeight = "bold";
-
     warning.style.fontSize = "2.5vh";
-
     moreInfo.style.fontSize = "1.8vh";
     
+    // close button and it's attributes
+    var closeBtn = document.createElement("button");
 
+    closeBtn.innerHTML = "x";
+    closeBtn.className = "close_button"
+    closeBtn.onclick = function(){
+        // removes the div when button is clicked
+        document.getElementById("hello_text_id").remove();
+    }
+
+    // Adds the appropriate messages into the div
     if (title !== 0 || content !== 0){
         popupTitle.innerHTML = "Warning";
         if (title === content){
-            warning.innerHTML = "The title and content of this article suggest that it might be " + dict[title];
+            warning.innerHTML = "The title and content of this article suggest that it might be " + dict[title].bold();
         }
         else if (content === 0){
-            warning.innerHTML = "The title of this article suggests that it might be " + dict[title];
+            warning.innerHTML = "The title of this article suggests that it might be " + dict[title].bold();
         }
         else if (title === 0){
-            warning.innerHTML = "The content of this article suggests that it might be " + dict[content];
+            warning.innerHTML = "The content of this article suggests that it might be " + dict[content].bold();
         }
         else{
-            warning.innerHTML = "The title of this article suggests that it might be " + dict[title] + " and the content suggests that it might be " + dict[content];
+            warning.innerHTML = "The title of this article suggests that it might be " + dict[title].bold() + " and the content suggests that it might be " + dict[content].bold();
         }
     }
     else{
         popupTitle.innerHTML = "OK";
-        warning.innerHTML = "Everything seems to be okay"
+        warning.innerHTML = "Everything seems to be " + "okay".bold();
     }
 
-    var infoText = "";
+    var infoText = "";  // some more text to be useful/fill the space
+    var bckColor = "";  // background colour of the div
+    var textColor = ""; // text colour of the div content
+
+    // determining the popup colours and setting additional messages
     if (title === 0 && content === 0){
-        infoText = "The article doesn't seem to be of harmful nature, but you still should use your own judgement to determine if it is valid. It is recommended to check other sources to see if the information mathces up."
+        bckColor = "rgb(235, 255, 234)";
+        textColor = "rgb(2, 69, 0)";
+        infoText = "The article doesn't seem to be of harmful nature, but you still should use your own judgement to determine if it is valid. It is recommended to check other sources to see if the information matches up."
     }
     if (title === 1 || content === 1){
-        infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture.\n"
+        bckColor = "rgb(255, 244, 233)";
+        textColor = "rgb(255, 119, 0)";
+        infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture.</br></br>"
     }
     if (title === 2 || content === 2){
-        infoText = infoText + "Satire articles are written as a joke. The information in them is likely untrue and shouldn't be taken seriously.\n"
+        bckColor = "rgb(255, 244, 233)";
+        textColor = "rgb(255, 119, 0)";
+        infoText = infoText + "Satire articles are written as a joke. The information in them is likely untrue and shouldn't be taken seriously.</br></br>"
     }
     if (title === 3 || content == 3){
-        infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic from reputable sources.\n"
+        bckColor = "rgb(255, 221, 227)";
+        textColor = "rgb(172, 23, 46)";
+        infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic from reputable sources.</br></br>"
     }
 
     moreInfo.innerHTML = infoText;
 
+    // adding all of the stuff to the div
     div.appendChild(popupTitle);
     div.appendChild(warning);
     div.appendChild(moreInfo);
-    div.style.position = "fixed";
+    div.appendChild(closeBtn);
+
     div.id = "hello_text_id"
+    div.style.backgroundColor = bckColor;
+
+    // adding the div to the page
     document.body.appendChild(div); 
+
+    // changing the colour of all div text boxes at once
+    var elements = document.getElementsByClassName("text_of_extension");
+    for (var i = 0; i < elements.length; i++){
+        elements[i].style.color = textColor;
+    }
 }
 
 
