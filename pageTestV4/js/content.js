@@ -19,26 +19,25 @@ xhr.open('POST', 'http://127.0.0.1:5000/', true);
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onload = function() {
   if (xhr.status === 200) {
-      var title = document.title.toLowerCase();
+    if (!((window.location.pathname.length < 17))) { //checks that the length of the pathname is not less than 17
+        var title = document.title.toLowerCase();
+        var newsKeywords = document.getElementsByName('news_keywords')[0];
 
-      try {
-        var keywords = document.getElementsByName('keywords')[0].getAttribute('content').toLowerCase();
-      } catch {
-        var keywords = "";
-      }
-
-      try {
-        var description = document.getElementsByName('description')[0].getAttribute('content').toLowerCase();
-      } catch {
-        var description = "";
-      }
-
-      if (!((window.location.pathname.length < 25))) { //checks that the length of the pathname is not less than 25
-        if ( (title.includes("news")) || (keywords.includes("news")) || (description.includes("news")) ) {
-            // alert("Yes, this is news");
+        if ((title.includes("news")) || (newsKeywords != undefined)) {
             makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
-          }
-      }
+        } else {
+            var x = document.getElementsByTagName("META");
+            var i;
+            var content;
+            for (i = 0; i < x.length; i++) {
+                content = x[i].content.toLowerCase();
+                if (content.includes("news")) {
+                    makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
+                    break;
+                }
+            }
+        } 
+    }
   }
 };
 xhr.send(modifyDOM());
