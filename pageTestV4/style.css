@@ -13,7 +13,7 @@
 .text_of_extension{
     all:unset;
     display: block;
-    padding-bottom: 1vh !important;
+    padding-bottom: 1% !important;
     font-family: 'Verdana', 'Tahoma', 'Geneva', sans-serif;
 }
 
@@ -31,4 +31,10 @@
 
 .close_button:hover{
     background-color: rgb(128, 128, 128, 0.1);
+}
+
+#popup_text{
+    width: 30em;
+    padding: 1% !important;
+    font-size: large;
 }

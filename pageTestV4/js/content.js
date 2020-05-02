@@ -1,3 +1,4 @@
+chrome.runtime.sendMessage({ greeting: "default html" }, function (response) {});
 
 function modifyDOM() {
     var pElements = document.getElementsByTagName("P");
@@ -14,61 +15,46 @@ function modifyDOM() {
 
 // sends the processes text to the backend (currently using local,
 // ideally would be hosted remotely)
-xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://127.0.0.1:5000/', true);
-xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-xhr.onload = function() {
-  if (xhr.status === 200) {
-      /*var title = document.title.toLowerCase();
+    xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://127.0.0.1:5000/', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            if (!((window.location.pathname.length < 17))) { //checks that the length of the pathname is not less than 17
+                var title = document.title.toLowerCase();
+                var newsKeywords = document.getElementsByName('news_keywords')[0];
 
-      try {
-        var keywords = document.getElementsByName('keywords')[0].getAttribute('content').toLowerCase();
-      } catch {
-        var keywords = "";
-      }
-
-      try {
-        var description = document.getElementsByName('description')[0].getAttribute('content').toLowerCase();
-      } catch {
-        var description = "";
-      }
-
-      if (!((window.location.pathname.length < 25))) { //checks that the length of the pathname is not less than 25
-        if ( (title.includes("news")) || (keywords.includes("news")) || (description.includes("news")) ) {
-            // alert("Yes, this is news");*/
-      if (!((window.location.pathname.length < 17))) { //checks that the length of the pathname is not less than 17
-        var title = document.title.toLowerCase();
-        var newsKeywords = document.getElementsByName('news_keywords')[0];
-
-        if ((title.includes("news")) || (newsKeywords != undefined)) {
-          alert("this is news");
-          makeDiv(xhr.responseText); // takes the answer it got and passes it to make the popup
-        }else {
-          var x = document.getElementsByTagName("META");
-          var i;
-          var content;
-          for (i = 0; i < x.length; i++) {
-            content = x[i].content.toLowerCase();
-            if (content.includes("news")) {
-              alert("this is news");
-              makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
-              break;
+                if ((title.includes("news")) || (newsKeywords != undefined)) {
+                    alert("this is news");
+                    makeDiv(xhr.responseText); // takes the answer it got and passes it to make the popup
+                } else {
+                    var x = document.getElementsByTagName("META");
+                    var i;
+                    var content;
+                    for (i = 0; i < x.length; i++) {
+                        content = x[i].content.toLowerCase();
+                        if (content.includes("news")) {
+                            alert("this is news");
+                            makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
+                            break;
+                        }
+                    }
+                }
             }
-          }
         }
-    }
-  }
-};
-xhr.send(modifyDOM());
+    };
+    xhr.send(modifyDOM());
+
+
 
 // map used to get words based on values; easier than making a case for each one
-var dict = {0: "neutral", 1: "biased", 2: "satire", 3:"fake"};
+var dict = { 0: "neutral", 1: "biased", 2: "satire", 3: "fake" };
 
 // main function which creates the div to be displayed; a mess. i'm sorry.
-// TODO: add icons next to text, write div into extension popup html, change extension logo to icon, hide div if neutral
+// TODO: add icons next to text, change extension logo to icon
 function makeDiv(text) {
     // gets integer values of the warnings for both title and content
-    title = parseInt(text.substring(0,1));
+    title = parseInt(text.substring(0, 1));
     content = parseInt(text.substring(1));
 
     var div = document.createElement("DIV");
@@ -95,28 +81,28 @@ function makeDiv(text) {
 
     closeBtn.innerHTML = "x";
     closeBtn.className = "close_button"
-    closeBtn.onclick = function(){
+    closeBtn.onclick = function () {
         // removes the div when button is clicked
         document.getElementById("hello_text_id").remove();
     }
 
-     // Adds the appropriate messages into the div
-    if (title !== 0 || content !== 0){
+    // Adds the appropriate messages into the div
+    if (title !== 0 || content !== 0) {
         popupTitle.innerHTML = "Warning";
-        if (title === content){
+        if (title === content) {
             warning.innerHTML = "The title and content of this article suggest that it might be " + dict[title].bold();
         }
-        else if (content === 0){
+        else if (content === 0) {
             warning.innerHTML = "The title of this article suggests that it might be " + dict[title].bold();
         }
-        else if (title === 0){
+        else if (title === 0) {
             warning.innerHTML = "The content of this article suggests that it might be " + dict[content].bold();
         }
-        else{
+        else {
             warning.innerHTML = "The title of this article suggests that it might be " + dict[title].bold() + " and the content suggests that it might be " + dict[content].bold();
         }
     }
-    else{
+    else {
         popupTitle.innerHTML = "OK";
         warning.innerHTML = "Everything seems to be " + "okay".bold();
     }
@@ -127,25 +113,25 @@ function makeDiv(text) {
     var textColor = ""; // text colour of the div content
 
     // determining the popup colours and setting additional messages
-    if (title === 0 && content === 0){
-      bckColor = "rgb(235, 255, 234)";
-      textColor = "rgb(2, 69, 0)";
-      infoText = "The article doesn't seem to be of harmful nature, but you still should use your own judgement to determine if it is valid. It is recommended to check other sources to see if the information matches up."
+    if (title === 0 && content === 0) {
+        bckColor = "rgb(235, 255, 234)";
+        textColor = "rgb(2, 69, 0)";
+        infoText = "The article doesn't seem to be of harmful nature, but you still should use your own judgement to determine if it is valid. It is recommended to check other sources to see if the information matches up."
     }
-    if (title === 1 || content === 1){
-      bckColor = "rgb(255, 244, 233)";
-      textColor = "rgb(255, 119, 0)";
-      infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture.\n"
+    if (title === 1 || content === 1) {
+        bckColor = "rgb(255, 244, 233)";
+        textColor = "rgb(255, 119, 0)";
+        infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture.\n"
     }
-    if (title === 2 || content === 2){
-      bckColor = "rgb(255, 244, 233)";
-      textColor = "rgb(255, 119, 0)";
-      infoText = infoText + "Satire articles are written as a joke. The information in them is likely untrue and shouldn't be taken seriously.\n"
+    if (title === 2 || content === 2) {
+        bckColor = "rgb(255, 244, 233)";
+        textColor = "rgb(255, 119, 0)";
+        infoText = infoText + "Satire articles are written as a joke. The information in them is likely untrue and shouldn't be taken seriously.\n"
     }
-    if (title === 3 || content == 3){
-      bckColor = "rgb(255, 221, 227)";
-      textColor = "rgb(172, 23, 46)";
-      infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic from reputable sources.\n"
+    if (title === 3 || content == 3) {
+        bckColor = "rgb(255, 221, 227)";
+        textColor = "rgb(172, 23, 46)";
+        infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic from reputable sources.\n"
     }
 
     moreInfo.innerHTML = infoText;
@@ -159,17 +145,29 @@ function makeDiv(text) {
     div.id = "hello_text_id"
     div.style.backgroundColor = bckColor;
 
-    // adding the div to the page
-    document.body.appendChild(div);
-
     // changing the colour of all div text boxes at once
-    var elements = document.getElementsByClassName("text_of_extension");
-    for (var i = 0; i < elements.length; i++){
+    var elements = div.getElementsByClassName("text_of_extension");
+    for (var i = 0; i < elements.length; i++) {
         elements[i].style.color = textColor;
     }
+
+    // adding the div to the page
+    if (!(title === 0 && content === 0)) {
+        document.body.appendChild(div);
+    }
+
+    // sends the div to the backend so that the html of the popup file
+    // can be changed here
+    xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://127.0.0.1:5000/popup', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () { };
+    // when it gets to python it turns into this weird dictionary thing
+    // which messes things up with = so it's temporarily replaced
+    xhr.send(div.outerHTML.replace(/=/g, "£"));
+
+    chrome.runtime.sendMessage({ greeting: "change html" }, function (response) {});
 }
-
-
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     // If the received message has the expected format...
@@ -179,4 +177,5 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
         result = modifyDOM();
         sendResponse(result); //this returns full page of stripped html, need to try and remove certain heading and list parts
     }
-})
+});
+

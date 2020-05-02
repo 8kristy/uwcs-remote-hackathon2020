@@ -1,7 +1,7 @@
 {
-  "name": "Page Test",
+  "name": "Fake News Detector",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Warn a user when they are viewing misleading or fake news",
   "background": {
     "scripts": ["js/background.js", "js/content.js"],
     "persistent": false,
@@ -9,12 +9,12 @@
   },
   "browser_action": {
     "default_title": "Test",
-    "default_popup": "index.html"
+    "default_popup": "default.html"
   },
   "content_scripts": [{
    "matches": ["<all_urls>"],
    "exclude_matches": ["*://*.google.com/*", "*://*.wikipedia.com/*", "*://*.bing.com/*", "*://*.duckduckgo.com/*", "*://*.ecosia.org/*", "*://*.facebook.com/*", "*://*.instagram.com/*", "*://*.twitter.com/*"],
-   "js": ["js/content.js"],
+   "js": ["js/content.js", "js/background.js"],
    "css":["style.css"]
    }],
   "permissions": ["activeTab", "<all_urls>"],
