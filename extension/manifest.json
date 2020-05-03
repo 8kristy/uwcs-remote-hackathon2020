@@ -1,0 +1,25 @@
+{
+  "name": "Fake News Detector",
+  "version": "1.0",
+  "description": "Warn a user when they are viewing misleading or fake news",
+  "background": {
+    "scripts": ["js/background.js", "js/content.js"],
+    "persistent": false,
+    "run_at": "document_end"
+  },
+  "browser_action": {
+    "default_title": "Fake News Detector",
+    "default_popup": "default.html"
+  },
+  "content_scripts": [{
+   "matches": ["<all_urls>"],
+   "exclude_matches": ["*://*.google.com/*", "*://*.wikipedia.com/*", "*://*.bing.com/*", "*://*.duckduckgo.com/*", "*://*.ecosia.org/*", "*://*.facebook.com/*", "*://*.instagram.com/*", "*://*.twitter.com/*"],
+   "js": ["js/content.js", "js/background.js"],
+   "css":["style.css"]
+   }],
+   "icons": { "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+   "128": "icons/icon128.png" },
+  "permissions": ["activeTab", "<all_urls>"],
+  "manifest_version": 2
+}

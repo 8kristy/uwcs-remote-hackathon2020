@@ -1,0 +1,16 @@
+Coronavirus IRS stimulus check error could be fixed with this hack
+Financial expert Chris Hogan says as Americans begin to receive their coronavirus relief checks, we should be in ‘conserve mode’ and avoid ‘any unnecessary spending.’ 
+Continue Reading Below
+(IRS)
+"Sorry to be all 'I heard this one weird trick from a friend and it really works' BUT, after weeks of not being able to see our status on the IRS website, we tried typing our address in ALL CAPS and it worked and we were able to finally enter our bank account info," wrote Jessica Roy, a Los Angeles Times reporter, in a tweet this weekend.
+Roy’s tweet was met with several Twitter users issuing thanks and agreeing that this method has worked for them.
+As to why the workaround appears to be working in the first place, Roy has a theory of her own.
+“The IRS website is built on a really old mainframe and apparently can't read lowercase letters. So instead of ‘123 Main Street, Anywhere, USA’ try ‘123 MAIN STREET, ANYWHERE, USA,’” she wrote in the Twitter thread. “Also, as a friend pointed out, there was a big IRS system upgrade a few days ago - it might be that the site only just ported over your info and would be working either way. But we tried lowercase again and it didn't work, and then upper-case and it did.”
+The IRS did not respond to a request for comment.
+If turning on your caps lock hasn’t worked to get around the error message, Roy shared a list of other tips users can try, which can range from abbreviating street addresses to removing punctuation marks and more.
+“The ALL CAPS thing works for a lot of people, but not everyone. If you're still struggling, I compiled all the tips from my replies and my inbox for what's worked for other people (contradictory advice in some cases, sorry, I didn't design the system!),” she wrote on Monday.
+The Get My Payment web tool is essential for Economic Impact Payment retrieval for most eligible tax-paying Americans. The tool is where people can update their banking information for direct deposit disbursement.
+Americans who make less than $75,000 will receive the maximum payout of $1,200. High-income earners who earn more than $75,000 a year as a single filer will have $5 deducted for every $100 made above the set cap. Those who make more than $99,000 a year as a single filer are not eligible.
+Married couples who file jointly are eligible for $2,400 if their combined income is under $150,000. The payment incrementally decreases the higher the couple’s income is. Couples who make $198,000 combined are not eligible for a stimulus check.
+An additional $500 is paid out to eligible Americans who have children that are age 16 and younger.
+“For the vast majority of Americans, no action on their part will be required in order to receive a rebate check as IRS will use a taxpayer’s 2019 tax return if filed, or in the alternative their 2018 return,” said the office of Sen. Chuck Grassley, who is the chairman for the Senate Committee on Finance.
