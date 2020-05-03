@@ -24,7 +24,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     icons[tabArray[0].id] = request.icon;
     callPopupPost(request.text);
     chrome.browserAction.setPopup({ popup: "index.html" });
-    chrome.browserAction.setIcon({path: "icons/" + request.icon + "16.png"});
+    chrome.browserAction.setIcon({path: "icons/" + request.icon + "48.png"});
   });
 });
 
