@@ -1,5 +1,3 @@
-chrome.runtime.sendMessage({ greeting: "default html" }, function (response) {});
-
 function modifyDOM() {
     var pElements = document.getElementsByTagName("P");
     var pageText = document.title + '\n';
@@ -155,18 +153,10 @@ function makeDiv(text) {
     if (!(title === 0 && content === 0)) {
         document.body.appendChild(div);
     }
-
-    // sends the div to the backend so that the html of the popup file
-    // can be changed here
-    xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://127.0.0.1:5000/popup', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function () { };
+    // sends the message to the extension to replace the popup
     // when it gets to python it turns into this weird dictionary thing
     // which messes things up with = so it's temporarily replaced
-    xhr.send(div.outerHTML.replace(/=/g, "£"));
-
-    chrome.runtime.sendMessage({ greeting: "change html" }, function (response) {});
+    chrome.runtime.sendMessage({ text: div.outerHTML.replace(/=/g, "£")}, function (response) {});
 }
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
