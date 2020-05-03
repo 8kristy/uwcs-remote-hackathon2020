@@ -28,7 +28,7 @@ def postPopup():
         # adds closing basic html tags + div which was cut off when removing button (that's what [:-45] is for)
         html = html + '</div></body></html>'
         # writes new html into the file
-        htmlFile = open("../pageTestV4/index.html", "w")
+        htmlFile = open("../extension/index.html", "w")
         htmlFile.write(html)
         htmlFile.close()
         return "ok"
