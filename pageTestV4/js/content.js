@@ -105,31 +105,36 @@ function makeDiv(text) {
         warning.innerHTML = "Everything seems to be " + "okay".bold();
     }
 
-    var infoText = "";
-    var infoText = "";  // some more text to be useful/fill the space
-    var bckColor = "";  // background colour of the div
-    var textColor = ""; // text colour of the div content
-
+    var infoText  = "";
+    var infoText  = "";  // some more text to be useful/fill the space
+    var bckColor  = "";  // background colour of the div
+    var textColor = "";  // text colour of the div content
+    var iconType  = "";  // what icon to display in tab
+ 
     // determining the popup colours and setting additional messages
     if (title === 0 && content === 0) {
         bckColor = "rgb(235, 255, 234)";
         textColor = "rgb(2, 69, 0)";
+        iconType = "good";
         infoText = "The article doesn't seem to be of harmful nature, but you still should use your own judgement to determine if it is valid. It is recommended to check other sources to see if the information matches up."
     }
     if (title === 1 || content === 1) {
         bckColor = "rgb(255, 244, 233)";
         textColor = "rgb(255, 119, 0)";
-        infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture.\n"
+        iconType = "orange";
+        infoText = infoText + "The person who wrote this article may have extreme opinions leaning towards one side of the argument. It is advised to consider the other side to see the full picture and seek out more neutral sources.\n"
     }
     if (title === 2 || content === 2) {
         bckColor = "rgb(255, 244, 233)";
         textColor = "rgb(255, 119, 0)";
+        iconType = "orange";
         infoText = infoText + "Satire articles are written as a joke. The information in them is likely untrue and shouldn't be taken seriously.\n"
     }
     if (title === 3 || content == 3) {
         bckColor = "rgb(255, 221, 227)";
         textColor = "rgb(172, 23, 46)";
-        infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic from reputable sources.\n"
+        iconType = "bad";
+        infoText = infoText + "Fake news, stories or hoaxes are created to deliberately misinform or deceive readers. Please do your own research about this topic.\n"
     }
 
     moreInfo.innerHTML = infoText;
@@ -156,7 +161,7 @@ function makeDiv(text) {
     // sends the message to the extension to replace the popup
     // when it gets to python it turns into this weird dictionary thing
     // which messes things up with = so it's temporarily replaced
-    chrome.runtime.sendMessage({ text: div.outerHTML.replace(/=/g, "£")}, function (response) {});
+    chrome.runtime.sendMessage({ text: div.outerHTML.replace(/=/g, "£"), icon: iconType}, function (response) {});
 }
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
