@@ -8,7 +8,7 @@
     "run_at": "document_end"
   },
   "browser_action": {
-    "default_title": "Test",
+    "default_title": "Fake News Detector",
     "default_popup": "default.html"
   },
   "content_scripts": [{

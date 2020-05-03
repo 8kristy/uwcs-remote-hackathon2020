@@ -1,11 +1,11 @@
+
+// function to strip the html tags
 function modifyDOM() {
     var pElements = document.getElementsByTagName("P");
     var pageText = document.title + '\n';
     for (index = 0; index < pElements.length; ++index) {
         if (pElements[index].innerText.length > 68 && pElements[index].innerText.split(" ").length > 7) {
-            //console.log(pElements[index].innerText);
             pageText = pageText + "\n" + pElements[index].innerText;
-            //console.log(pElements[index].innerText.length)
         }
     }
     return pageText;
@@ -23,16 +23,13 @@ function modifyDOM() {
                 var newsKeywords = document.getElementsByName('news_keywords')[0];
 
                 if ((title.includes("news")) || (newsKeywords != undefined)) {
-                    alert("this is news");
                     makeDiv(xhr.responseText); // takes the answer it got and passes it to make the popup
                 } else {
                     var x = document.getElementsByTagName("META");
-                    var i;
                     var content;
-                    for (i = 0; i < x.length; i++) {
+                    for (var i = 0; i < x.length; i++) {
                         content = x[i].content.toLowerCase();
                         if (content.includes("news")) {
-                            alert("this is news");
                             makeDiv(xhr.responseText); // takes the answer it got and passes it to make the alert
                             break;
                         }
@@ -164,13 +161,4 @@ function makeDiv(text) {
     chrome.runtime.sendMessage({ text: div.outerHTML.replace(/=/g, "£"), icon: iconType}, function (response) {});
 }
 
-chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
-    // If the received message has the expected format...
-    if (msg.text === 'report_back_full') {
-        // Call the specified callback, passing
-        // the web-page's DOM content as argument
-        result = modifyDOM();
-        sendResponse(result); //this returns full page of stripped html, need to try and remove certain heading and list parts
-    }
-});
 

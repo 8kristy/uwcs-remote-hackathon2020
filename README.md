@@ -31,9 +31,3 @@ If you wish to train the models on your own datasets, put the files in their cor
 >
 >Content of the article
 
-## Credits
-
-- [Kristina Soboleva](https://github.com/8kristy): classification and front-end
-- [Lydia Shepherd](https://github.com/Llydie): extension and page filtering
-- [Rebecca French](https://github.com/rebeccajfrench): extension and page filtering
-- [Nicola Cleary](https://github.com/clearlycleary): gathering datasets for training
